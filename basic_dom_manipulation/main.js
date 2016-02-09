@@ -1,9 +1,4 @@
-function doStuff() {
-  var val = getValue('word');
-  putValue(val, 'amazing');
-}
-
-function doStuff2() {
-  var val = getValue('movie');
-  putValue(val, 'bebop');
+function doStuff(fromElement1, toElement2) {
+  var val = getValue(fromElement1);
+  putValue(val, toElement2);
 }
