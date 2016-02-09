@@ -1,4 +1,4 @@
-function putValue(newHtml, x){
-  var element = document.getElementById(x);
+function putValue(newHtml, id){
+  var element = document.getElementById(id);
   element.innerHTML = newHtml;
 }

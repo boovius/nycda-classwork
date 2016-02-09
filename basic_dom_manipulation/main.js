@@ -1,4 +1,6 @@
-function doStuff(fromElement1, toElement2) {
+function doStuff(fromElement1, outputArray) {
   var val = getValue(fromElement1);
-  putValue(val, toElement2);
+  for (var i=1; i<arguments.length; i++) {
+    putValue(val, arguments[i]);
+  }
 }
