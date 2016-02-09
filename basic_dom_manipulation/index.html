@@ -7,7 +7,7 @@
         padding-left: 100px;
         padding-top: 40px;
       }
-      #button {
+      .button {
         height: 200px;
         width: 200px;
         background-color: yellow;
@@ -16,8 +16,14 @@
   </head>
   <body>
     <input type='text' id='word'/>
-    <button id='button' onclick='doStuff()'></button>
+    <button id='button' class='button' onclick="doStuff('word', 'amazing')"></button>
     <div id='amazing'>0</div>
+
+    <input type='text' id='movie'/>
+    <button id='button2' class='button' onclick="doStuff('movie', 'bebop')"></button>
+    <div id='bebop'>0</div>
   </body>
   <script src='main.js'></script>
+  <script src='get_value.js'></script>
+  <script src='put_value.js'></script>
 </html>

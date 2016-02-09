@@ -1,15 +1,9 @@
-function getValue() {
-  var wordElement = document.getElementById('word');
-  return wordElement.value;
-}
-
-function putAmazingStuff(newHtml){
-  var bubble = document.getElementById('amazing');
-  bubble.innerHTML = newHtml;
-}
-
 function doStuff() {
-  var val = getValue();
-  debugger;
-  putAmazingStuff(val);
+  var val = getValue('word');
+  putValue(val, 'amazing');
+}
+
+function doStuff2() {
+  var val = getValue('movie');
+  putValue(val, 'bebop');
 }
