@@ -1,6 +1,7 @@
-function doStuff(fromElement1, outputArray) {
+function doStuff(fromElement1) {
   var val = getValue(fromElement1);
-  for (var i=1; i<arguments.length; i++) {
-    putValue(val, arguments[i]);
+  var divs = document.getElementsByClassName('test')
+  for (var i=0; i<divs.length; i++) {
+    putValue(val, divs[i].id);
   }
 }
