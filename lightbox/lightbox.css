@@ -1,0 +1,17 @@
+.lightbox-outer{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+}
+
+.lightbox-inner{
+	text-align: center;
+}
+
+img {
+	width: 500px;
+}
