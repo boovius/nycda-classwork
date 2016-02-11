@@ -1,14 +1,11 @@
 $(document).ready(function(){
-  // function myFunc (){
-  //   console.log(this);
-  //   console.log(this === window);
-  // }
-
-  // myFunc();
-
-  function superVariableFunction() {
-    var superVariable = 'super';
+  function myFunc (){
+    console.log('from function call not in object');
+    console.log(this);
+    console.log(this === window);
   }
+
+  myFunc();
 
   var object = {
     prop: 'objectName',
@@ -17,8 +14,6 @@ $(document).ready(function(){
       console.log(this);
       console.log(this === window);
       var that = this;
-      console.log('echoing out superVariable');
-      console.log(superVariable);
 
       function moreThis(){
         console.log('from moreThis a function within a method')
