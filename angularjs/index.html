@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="main.js"></script>
+    <style>
+      #container {
+        width: 900px;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body ng-app='myApp'>
+    <div ng-controller="MainController" id='container'>
+      <section id='data-binding'>
+        <h1>Behold, data-binding:....</h1>
+        <input type='text' ng-model='stuff'/>
+        <h3>{{stuff}}</h3>
+      </section>
+      <hr>
+      <section id='number'>
+        <h1>Behold, scoped data</h1>
+        <input type='number' ng-model="number"/>
+        <h3>{{number === NaN ? 0 : number * 2}}</h3>
+      </section>
+      <hr>
+      <section id='repeat'>
+        <h1>Behold, scoped data</h1>
+        <div id='our-data'>
+          <h4>our data</h4>
+          <div>{{names}}</div>
+        </div>
+        <h4>elements repeated</h4>
+        <input type='text' ng-model='search'/>
+        <h5>click on elements to remove</h5>
+        <ul ng-repeat='name in names | filter:search'>
+          <li ng-click='removeMe()'>{{name}}</li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
