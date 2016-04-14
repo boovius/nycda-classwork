@@ -1,0 +1,32 @@
+p {
+  color: red;
+}
+
+#first {
+  color: blue;
+}
+
+.classy {
+  color: orange;
+}
+
+#second {
+  color: purple;
+}
+
+div {
+  background-color: rgba(100, 20, 200, .87);
+  width: 10em;
+}
+
+div p {
+  color: green;
+}
+
+div p {
+  color: yellow;
+}
+
+p {
+  color: #ccc;
+}
